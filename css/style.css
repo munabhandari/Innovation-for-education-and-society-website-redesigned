@@ -69,9 +69,20 @@ header nav li.active a {
 header nav li:not(:last-child) a:before {
     content: '';
     position: absolute;
-    border: 1px solid black;
-    width: 100%;
+    border: 1px solid var(--yellow);
     bottom: -3px;
+    width: 100%;
+    transition: 0.5s;
+}
+
+header nav li:not(:last-child):not(:first-child) a:before {
+    visibility: hidden;
+    width: 0%;
+}
+
+header nav li:not(:last-child):not(:first-child):hover a:before {
+    visibility: visible;
+    width: 100%;
 }
 
 .d-flex {
@@ -84,4 +95,54 @@ header nav li:not(:last-child) a:before {
 
 /* header part end */
 
+.banner1 article {
+    margin-top: 150px;
+    max-width: 515px;
+}
+
+.banner1 article h1 {
+    font-size: 35px;
+    line-height: 46px;
+    color: var(--yellow);
+}
+
+.banner1 article p {
+    margin-top: 15px;
+    line-height: 23px;
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.banner1 article button {
+    margin-top: 30px;
+    background-color: var(--yellow);
+    color: var(--white);
+    padding: 15px 25px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 10px 5px #eee;
+    border: 1px solid var(--yellow);
+    letter-spacing: 1px;
+}
+
 /* banner1 section end */
+
+/* Our-Department section start */
+.Our-Department article{
+    text-align: center;
+    margin-bottom: 65px;
+}
+.Our-Department article h4{
+    font-size: 40px;
+    font-weight:normal;
+    margin-top: 5px;
+}
+.Our-Department article p{
+    margin: 15px 0px;
+    line-height: 23px;
+    font-size: 16px;
+    color: var(--grey);
+   
+}
+
+/* Our-Department section end */
+mobile responsive banauna baki cha nav bar sticky garauna pani baki cha voli garna nabirsine
