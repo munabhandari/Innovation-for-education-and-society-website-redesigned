@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #5a6e79;
+    --yellow: #ffc178;
+    --navyblue: #252c3a;
+    --lightgreen: #43cb83;
+    --lightpink: #ff5f72;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* banner1 section start*/
+
+.banner1 {
+    background-image: url(../images/banner1.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* header part start */
+
+header .logo img {
+    padding-top: 25px;
+}
+
+/* nav part start */
+
+header nav li {
+    display: inline-block;
+    margin: 18px 39px 0px 0px;
+    position: relative;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+header nav li:last-child a {
+    background-color: var(--white);
+    color: var(--yellow);
+    padding: 10px 20px;
+    border-radius: 40px;
+    box-shadow: 1px 1px 19px 6px #eee;
+}
+
+header nav li.active a {
+    color: var(--yellow);
+}
+
+header nav li:not(:last-child) a:before {
+    content: '';
+    position: absolute;
+    border: 1px solid black;
+    width: 100%;
+    bottom: -3px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* nav part end */
+
+/* header part end */
+
+/* banner1 section end */
