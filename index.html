@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Innovation For Education and Society</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
     <section class="banner1">
-        <div class="container ">
-            <header class="d-flex">
+        <header>
+            <div class="d-flex container">
                 <div class="logo">
                     <a href="index.html">
                         <img src="images/Logo1.png" alt="Logo1">
@@ -31,29 +32,36 @@
                         <li><a href="index.html">Apply now</a></li>
                     </ul>
                 </nav>
-            </header>
+            </div>
+        </header>
 
-            <article>
-                <h1>Innovation for education 
-                    and society</h1>
-                <p>Our interdisciplinary majors and minors mean you can<br> 
-                    chart your own course for academic success.</p>
-                    <button>Visit our Campus</button>
-            </article>
-        </div>
-    </section>
-
-    <section class="Our-Department">
         <div class="container">
             <article>
-                <h4>Our Department</h4>
-                <p>A hundred thousand grateful loves to your dear papa and mamma. Is your<br> poor brother recovered of his rack-punch? Oh, dear! Oh, dear! How men<br> should beware of wicked punch!</p>
+                <h1 class="animate__animated animate__backInRight">Innovation for education
+                    and society</h1>
+                <p>Our interdisciplinary majors and minors mean you can<br>
+                    chart your own course for academic success.</p>
+                <button class="hover-right-bounce">Visit our Campus</button>
             </article>
         </div>
     </section>
 
+    <section class="Our-Department container">
+        <article>
+            <h4 class="wow bounceInUp">Our Department</h4>
+            <p>A hundred thousand grateful loves to your dear papa and mamma. Is your<br> poor brother recovered of
+                his rack-punch? Oh, dear! Oh, dear! How men<br> should beware of wicked punch!</p>
+        </article>
+    </section>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/script.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

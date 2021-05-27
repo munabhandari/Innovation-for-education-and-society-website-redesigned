@@ -12,6 +12,7 @@
     --lightgreen: #43cb83;
     --lightpink: #ff5f72;
     --white: #ffffff;
+    --bg-banner: #fff9f3;
 }
 
 body {
@@ -27,7 +28,7 @@ h1 {
 .banner1 {
     background-image: url(../images/banner1.png);
     background-size: cover;
-    height: 100vh;
+    min-height: 1000px;
 }
 
 .container {
@@ -126,23 +127,69 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
 
 /* banner1 section end */
 
+/* sticky header on scroll start */
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    background: var(--bg-banner);
+    animation-name: slide;
+    animation-duration: 0.5s;
+}
+
+@keyframes slide {
+    from {
+        top: -100px
+    }
+    to {
+        top: 0px
+    }
+}
+
+.sticky-article {
+    margin-top: 257px !important;
+}
+
+/* sticky header on scroll end*/
+
 /* Our-Department section start */
-.Our-Department article{
+
+.Our-Department article {
     text-align: center;
     margin-bottom: 65px;
 }
-.Our-Department article h4{
+
+.Our-Department article h4 {
     font-size: 40px;
-    font-weight:normal;
+    font-weight: normal;
     margin-top: 5px;
 }
-.Our-Department article p{
+
+.Our-Department article p {
     margin: 15px 0px;
     line-height: 23px;
     font-size: 16px;
     color: var(--grey);
-   
 }
 
 /* Our-Department section end */
-mobile responsive banauna baki cha nav bar sticky garauna pani baki cha voli garna nabirsine
+
+/* btn animation start */
+
+.hover-right-bounce {
+    background-position: 0px 0px;
+}
+
+.hover-right-bounce:hover {
+    background-color: var(--lightpink) !important;
+    transition: 0.5s;
+    background-position: 100% 100%;
+}
+
+/* btn animation end */
+
+/* 
+mobile responsive banauna baki cha */
