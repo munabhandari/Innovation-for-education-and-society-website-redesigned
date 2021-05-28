@@ -13,6 +13,8 @@
     --lightpink: #ff5f72;
     --white: #ffffff;
     --bg-banner: #fff9f3;
+    --bg-darkblue: #1d232e;
+    --color: #717276;
 }
 
 body {
@@ -92,6 +94,11 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
     align-items: center;
 }
 
+.my-40px {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 /* nav part end */
 
 /* header part end */
@@ -168,7 +175,7 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
     margin-top: 5px;
 }
 
-.Our-Department article h4:hover {
+.stretch-on-hover:hover {
     transition: 0.4s;
     transform: scaleX(1.25);
     color: var(--yellow);
@@ -219,6 +226,10 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
 
 /* university-info section start */
 
+.university-info .container {
+    align-items: inherit;
+}
+
 .info-left {
     position: relative;
 }
@@ -243,12 +254,16 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
     width: 456px;
 }
 
+.info-left .icon-btn:hover {
+    background-color: var(--white);
+    color: var(--yellow);
+}
+
 .info-left .icon-btn {
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-
     position: absolute;
     top: 212px;
     left: 212px;
@@ -260,5 +275,125 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
     font-size: 50px;
 }
 
+.info-right {
+    max-width: 555px;
+    max-height: 511px;
+}
+
+.info-right h4 {
+    font-size: 40px;
+}
+
+.info-right p {
+    line-height: 23px;
+    font-size: 18px;
+    color: var(--grey);
+}
+
+.number span {
+    font-size: 40px;
+}
+
+.number1 p, .number1 span {
+    color: var(--yellow);
+}
+
+.number2 p, .number2 span {
+    color: var(--lightpink);
+}
+
+.number3 p, .number3 span {
+    color: var(--lightgreen);
+}
 
 /* university-info section end */
+
+/* Around-the-University section start */
+
+.Around-the-University h4 {
+    font-size: 40px;
+    margin-top: 132px;
+    margin-bottom: 105px;
+    text-align: center;
+}
+
+.Around-the-University .Graphics-Design {
+    height: 310px;
+    max-width: 260px;
+    box-shadow: 0px 0px 4px 3px var(--bg-banner);
+}
+
+.Around-the-University .Graphics-Design h5 {
+    font-size: 16px;
+    font-weight: normal;
+    padding: 20px 25px 5px 14px;
+}
+
+.Around-the-University .Graphics-Design p {
+    color: var(--grey);
+    font-size: 12px;
+    padding: 10px 25px 2px 14px;
+}
+
+.d-flex8 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.d-grid4{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 36px;
+}
+/* Around-the-University section end */
+
+/* footer section start */
+
+footer {
+    margin-top: 119px;
+    font-size: 14px;
+}
+
+.footer-top {
+    background-color: var(--navyblue);
+    color: var(--color);
+    padding: 67px 0px 111px 0px;
+}
+
+.footer-top hr {
+    border-color: var(--color);
+    max-width: 300px;
+}
+
+.footer-top h6 {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: normal;
+    padding-bottom: 48px;
+}
+
+.footer-top .flex-box4 .col2 span {
+    color: var(--grey);
+}
+
+.mt-22{
+    margin-top: 22px;
+}
+footer a:hover{
+    color: blue;
+}
+
+footer a{
+    color: var(--grey);
+    text-decoration: none;
+}
+
+.footer-bottom {
+    background-color: var(--bg-darkblue);
+    color: var(--color);
+    padding: 23px 0px;
+}
+
+/* footer section end */
