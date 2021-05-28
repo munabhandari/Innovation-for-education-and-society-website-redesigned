@@ -243,19 +243,12 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
     width: 456px;
 }
 
-.info-left .icon-btn:hover {
-    background-color: black;
-}
+.info-left .icon-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-.info-left .icon-arrow {
-
-}
-
-.info-left .icon-circle:hover {
-    
-}
-
-.info-left .icon-circle {
     position: absolute;
     top: 212px;
     left: 212px;
@@ -263,14 +256,9 @@ header nav li:not(:last-child):not(:first-child):hover a:before {
     width: 96px;
     border-radius: 100%;
     background-color: var(--yellow);
+    color: var(--white);
+    font-size: 50px;
 }
 
-.info-left .icon-arrow {
-    position: absolute;
-    top: 226px;
-    left: 253px;
-    font-size: 60px;
-    color: var(--white);
-}
 
 /* university-info section end */
